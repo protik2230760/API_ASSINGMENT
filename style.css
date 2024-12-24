@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+
+  .hero-section {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    color: white;
+  }
+  
+  .hero-section p {
+    color: #e9ecef;
+  }
+  
+  .rounded-search {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    width: 60%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px plum;
+    transition: transform 0.3s ease;
+  }
+  
+  .rounded-search:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+
+  .results-section .country-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(131, 6, 92, 0.688); 
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 300px;
+  }
+  
+  .results-section .country-card:hover {
+    transform: scale(1.05);
+    background-color: peachpuff;
+  }
+  
+  .country-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .country-card .btn {
+    margin-top: 10px;
+  }
+  
+
+  .about-section {
+    background: #f1f7fd;
+    padding: 40px 20px;
+  }
+  
+
+  footer {
+    background-color:pink;
+    color: #e9ecef;
+  }
+

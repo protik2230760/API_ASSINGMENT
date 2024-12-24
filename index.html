@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country & Weather Explorer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/download-removebg-preview.png" alt="Logo" class="logo">
+        Country Explorer
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero-section">
+    <div class="container text-center">
+      <h1 class="text-light">Explore Countries and Weather</h1>
+      <p class="lead text-light">Get detailed information about countries and their weather conditions.</p>
+      <input type="text" id="searchBox" class="rounded-search" placeholder="Search for a country...">
+    </div>
+  </section>
+
+
+  <section id="results" class="results-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Results</h2>
+      <div id="countryGrid" class="d-flex flex-wrap justify-content-center gap-4"></div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">Country Explorer is your go-to platform for finding detailed information about countries and their current weather conditions. Powered by free APIs, our goal is to deliver accurate and reliable data.</p>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; Saidur Rahman Protik</p>
+  </footer>
+
+  
+  <div class="modal fade" id="weatherModal" tabindex="-1" aria-labelledby="weatherModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="weatherModalLabel">Weather Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalWeatherDetails">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
